@@ -7,8 +7,8 @@ import os
 from sklearn.covariance import GraphicalLassoCV
 
 # -------------------------- 1. 路径配置与创建 --------------------------
-input_file_path = r"D:\Users\senta\NHIS\NHIS2019\analysis on adult\SAMPLE-7021.csv"
-output_dir = r"D:\Users\senta\NHIS\NHIS2019\analysis on adult\python screening\network analysis\8"
+input_file_path = r"data.csv"
+output_dir = r"output"
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -423,4 +423,5 @@ print(f"2. 网络边数量: {G.number_of_edges()} 条边")
 print(f"3. 节点类型: {len(gad7_items_original)} 个GAD-7节点, {len(phq8_items_original)} 个PHQ-8节点")
 print(f"4. 计算的中心性指标: {len(centrality_metrics)} 种")
 print(f"5. Bridge Expected Influence (BEI) 计算完成: {len(bridge_ei)} 个节点")
+
 print(f"6. Expected Influence (EI) 计算完成: {len(expected_influence)} 个节点")
