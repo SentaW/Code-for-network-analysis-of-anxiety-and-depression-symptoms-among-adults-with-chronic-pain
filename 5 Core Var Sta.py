@@ -4,8 +4,8 @@ from scipy.stats import shapiro
 import warnings
 
 # 定义文件路径
-file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\SAMPLE-7021.csv'
-output_file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\core_variables_descriptive_statistics.xlsx'
+file_path = r'data.csv'
+output_file_path = r'output.xlsx'
 
 # 读取CSV文件
 df = pd.read_csv(file_path)
@@ -107,5 +107,6 @@ all_stats = pd.concat([gadcat_df, phqcat_df, gad7_df, phq8_df], ignore_index=Tru
 # 创建一个Excel writer对象
 with pd.ExcelWriter(output_file_path, engine='xlsxwriter') as writer:
     all_stats.to_excel(writer, sheet_name='Core Var Stats', index=False)
+
 
 print(f"Descriptive statistics saved to {output_file_path}")
