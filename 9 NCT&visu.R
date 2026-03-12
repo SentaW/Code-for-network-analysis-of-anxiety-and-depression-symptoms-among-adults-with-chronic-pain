@@ -6,7 +6,7 @@ library(reshape2)
 set.seed(123)
 
 # 输出路径
-output_path <- "D:/Users/senta/NHIS/NHIS2019/analysis on adult/NCT-R/"
+output_path <- "outputpath"
 if (!dir.exists(output_path)) dir.create(output_path, recursive=T)
 
 # ==============================
@@ -178,4 +178,5 @@ cat("✅ 分析完成！\n")
 cat("全局强度p值：", global_result$数值[2], "\n")
 cat("结构差异p值：", global_result$数值[3], "\n")
 cat("显著差异边数：", nrow(edge_sig), "\n")
+
 cat("结果路径：", output_path, "\n")
