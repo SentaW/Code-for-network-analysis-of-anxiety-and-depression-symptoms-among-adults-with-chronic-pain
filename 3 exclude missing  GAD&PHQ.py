@@ -1,8 +1,8 @@
 import pandas as pd
 
 # 定义文件路径和列名
-file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\adult19.csv'
-output_file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\missing_data_management.csv'
+file_path = r'data.csv'
+output_file_path = r'output.csv'
 
 # GAD量表相关列名
 gad_columns = ['GAD71_A', 'GAD72_A', 'GAD73_A', 'GAD74_A', 'GAD75_A', 'GAD76_A', 'GAD77_A', 'GADCAT_A']
@@ -33,4 +33,5 @@ print(f"筛选完成后，共 {len(filtered_df)} 行数据")
 
 # 将新的DataFrame保存为CSV文件
 filtered_df.to_csv(output_file_path, index=False)
+
 print(f"新的数据已保存到 {output_file_path}")
