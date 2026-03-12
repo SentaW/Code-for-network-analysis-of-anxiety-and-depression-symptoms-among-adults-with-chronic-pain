@@ -39,4 +39,7 @@ Main R packages:
 - reshape
 - NetworkComparisonTest
 
+Users should download NHIS 2019 data from the official NHIS website
+and place it in the repository root folder before running the scripts.
+
 ## Repository structure
