@@ -4,8 +4,8 @@ import numpy as np
 
 # -------------------------- 基础设置 --------------------------
 # 文件路径（原始字符串避免转义问题）
-file_path = r'D:\Users\senta\NHIS\NHIS2019\analysis on adult\python screening\network analysis\final\BEI\node_bridge_expected_influence.csv'
-save_path = r'D:\Users\senta\NHIS\NHIS2019\analysis on adult\python screening\network analysis\final\BEI\BEI.png'
+file_path = r'datapath'
+save_path = r'outputpath'
 
 # 设置字体：中文用黑体，英文用Times New Roman（统一EI图样式）
 plt.rcParams['font.sans-serif'] = ['Times New Roman', 'SimHei']  # 优先Times New Roman，中文 fallback 到黑体
@@ -138,4 +138,5 @@ plt.savefig(
 print(f"图表已保存到：{save_path}")
 
 # 显示图片（运行时弹出窗口，可注释掉）
+
 plt.show()
