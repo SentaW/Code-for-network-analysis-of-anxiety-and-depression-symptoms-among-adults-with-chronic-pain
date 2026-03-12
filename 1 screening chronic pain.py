@@ -1,8 +1,8 @@
 import pandas as pd
 
 # 定义文件路径和列名
-file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\adult19.csv'
-output_file_path = r'D:\Users\senta\NHIS\NHIS2019\adult19csv\chronic_pain_patients.csv'
+file_path = r'data.csv'
+output_file_path = r'output.csv'
 column_name = 'PAIFRQ3M_A'
 
 # 读取CSV文件
@@ -18,5 +18,6 @@ if len(filtered_df) == 7184:
     print(f"筛选完成，共 {len(filtered_df)} 行数据已保存到 {output_file_path}")
 else:
     print(f"筛选结果不符合预期，共 {len(filtered_df)} 行数据")
+
 
 
