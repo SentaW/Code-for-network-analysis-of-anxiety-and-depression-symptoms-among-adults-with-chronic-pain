@@ -22,8 +22,8 @@ node_labels <- c(paste0("G", 1:7), paste0("P", 1:8)) # 固定15个标签
 # 步骤2：读取数据+强制保留15列（关键！）
 # ==============================
 # 读取数据
-female <- read.csv("D:/Users/senta/NHIS/NHIS2019/analysis on adult/python screening/network analysis/8/female_network_data.csv")
-male   <- read.csv("D:/Users/senta/NHIS/NHIS2019/analysis on adult/python screening/network analysis/8/male_network_data.csv")
+female <- read.csv("datapath")
+male   <- read.csv("datapath")
 
 # 调试：打印原始数据列名，确认15列存在
 cat("=== 原始数据列名检查 ===\n")
@@ -180,3 +180,4 @@ cat("结构差异p值：", global_result$数值[3], "\n")
 cat("显著差异边数：", nrow(edge_sig), "\n")
 
 cat("结果路径：", output_path, "\n")
+
