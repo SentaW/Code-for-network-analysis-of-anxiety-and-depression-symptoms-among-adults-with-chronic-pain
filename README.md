@@ -1,5 +1,4 @@
 # Code-for-network-analysis-of-anxiety-and-depression-symptoms-among-adults-with-chronic-pain
-# Anxiety–Depression Symptom Network in Adults with Chronic Pain
 
 This repository contains the analysis code used in the study:
 
