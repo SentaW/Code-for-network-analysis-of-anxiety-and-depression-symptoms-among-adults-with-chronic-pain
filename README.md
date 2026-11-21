@@ -15,23 +15,10 @@ The NHIS dataset is publicly available. Raw data are not included in this reposi
 ## Software
 All statistical analyses were performed using:
 
-- **Python (version 3.9.7)**
 - **R (version 4.4.1)**
 
-### Python analysis
-Python was used for data preprocessing, descriptive statistics, network estimation, and visualization.
-
-Main Python libraries:
-- pandas
-- numpy
-- scipy
-- NetworkX
-- scikit-learn
-- matplotlib
-- seaborn
-
 ### R analysis
-R was used for gender-specific subgroup analyses and the Network Comparison Test (NCT).
+R was used for data preprocessing, descriptive statistics, network estimation, and visualization, gender-specific subgroup analyses and the Network Comparison Test (NCT).
 
 Main R packages:
 - bootnet
